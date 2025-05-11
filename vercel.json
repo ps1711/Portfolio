@@ -14,7 +14,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "staticfiles",
-        "buildCommand": "./build_files.sh"
+        "buildCommand": "/opt/python/bin/python build_files.sh"
       }
     }
   ],
