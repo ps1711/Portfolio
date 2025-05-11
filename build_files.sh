@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Attempt to locate the virtual environment activation script
-VENV_ACTIVATE=$(find /opt/python -name "activate" -type f -print -quit)
+# Attempt to locate the virtual environment activation script by searching from root
+VENV_ACTIVATE=$(find / -name "activate" -type f -print -quit)
 
 if [ -n "$VENV_ACTIVATE" ]; then
   echo "Activating virtual environment: $VENV_ACTIVATE"
   source "$VENV_ACTIVATE"
 else
-  echo "Error: Virtual environment activation script not found."
+  echo "Error: Virtual environment activation script not found anywhere."
   exit 1
 fi
 
