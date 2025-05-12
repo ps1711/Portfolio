@@ -1,5 +1,5 @@
 Django
 gunicorn
 whitenoise
-pysqlite3
+psycopg2
 dj_database_url
