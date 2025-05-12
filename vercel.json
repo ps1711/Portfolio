@@ -29,6 +29,5 @@
       "src": "/(.*)",
       "dest": "mywebsite/wsgi.py"
     }
-  ],
-  "public": "staticfiles"
+  ]
 }
