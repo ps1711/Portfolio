@@ -2,3 +2,4 @@ Django
 gunicorn
 whitenoise
 pysqlite3
+dj_database_url
