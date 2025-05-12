@@ -1,112 +1,131 @@
-{% load static %}
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title></title>
-    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Priyanshu's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- Internal CSS for responsive layout -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
 
+        #profile-pic {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .social-links img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #17a2b8;
+            margin: 0 5px;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            #profile-wrapper {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+
+            .social-links {
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            #profile-pic {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <br>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <div class="card card-body h-100  border-info" id="profile-wrapper">
-                    <img id="profile-pic" src="https://media.licdn.com/dms/image/v2/D5603AQEh5mn7UyK-Gg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690873987528?e=1752710400&v=beta&t=MprWRPM5jhxnUXvMdBH6LeHft9MH5i2RpRGaF6Qy_gU" >
+            <div class="col-md-3 col-12">
+                <div class="card card-body h-100 border-info" id="profile-wrapper">
+                    <img id="profile-pic" src="https://media.licdn.com/dms/image/v2/D5603AQEh5mn7UyK-Gg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1690873987528?e=1752710400&v=beta&t=MprWRPM5jhxnUXvMdBH6LeHft9MH5i2RpRGaF6Qy_gU">
                     <hr>
                     <h4>Hi I'm Priyanshu!</h4>
                     <p>I love coding, doing research and collaborating</p>
                 </div>
             </div>
 
-            <div class="col-md-9">
-                <div class="card card-body h-100  border-info">
+            <div class="col-md-9 col-12">
+                <div class="card card-body h-100 border-info">
                     <h4>Development Engineer at Nokia</h4>
                     <hr>
                     <p>Designed, built, and managed automated pipelines for deployments and security testing, significantly reducing manual steps and shortening the time required to complete tasks.</p>
-					<p>As part of my responsibilities, I conducted penetration testing for both Virtual Network Functions (VNFs) and Cloud-Native Functions (CNFs), automating test execution using custom scripts and tools like bpttester, bptvnftester, and bptcnftester. I automated reporting and email delivery, helping cross-functional teams detect vulnerabilities early and meet strict compliance requirements.</p>
-					<p>Working in a dynamic DevOps environment, I managed tool installations and remote executions across Kubernetes-based CNF platforms and traditional VMs. I leveraged secure file transfers and remote orchestration techniques to maintain testing infrastructure, enabling smooth collaboration between internal development and QA teams, and ensuring consistent build environments.</p>
+                    <p>As part of my responsibilities, I conducted penetration testing for both Virtual Network Functions (VNFs) and Cloud-Native Functions (CNFs), automating test execution using custom scripts and tools like bpttester, bptvnftester, and bptcnftester. I automated reporting and email delivery, helping cross-functional teams detect vulnerabilities early and meet strict compliance requirements.</p>
+                    <p>Working in a dynamic DevOps environment, I managed tool installations and remote executions across Kubernetes-based CNF platforms and traditional VMs. I leveraged secure file transfers and remote orchestration techniques to maintain testing infrastructure, enabling smooth collaboration between internal development and QA teams, and ensuring consistent build environments.</p>
 
-                    <div style="text-align: center; margin-top: 20px;">
-  <table style="margin: 0 auto;">
-    <tr>
-      <td style="padding: 0 10px;">
-        <a href="https://www.facebook.com/profile.php?id=100042266948633">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
-               style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #17a2b8;">
-        </a>
-      </td>
-      <td style="padding: 0 10px;">
-        <a href="https://www.linkedin.com/in/priyanshu-singh-6037b31a5/">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-               style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #17a2b8;">
-        </a>
-      </td>
-      <td style="padding: 0 10px;">
-        <a href="https://github.com/ps1711">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-               style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #17a2b8;">
-        </a>
-      </td>
-      <td style="padding: 0 10px;">
-        <a href="https://www.instagram.com/priyanshu_singh_17/">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
-               style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #17a2b8;">
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100042266948633"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"></a>
+                        <a href="https://www.linkedin.com/in/priyanshu-singh-6037b31a5/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
+                        <a href="https://github.com/ps1711"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+                        <a href="https://www.instagram.com/priyanshu_singh_17/"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>
+                    </div>
                 </div>
             </div>
         </div>
+
         <br>
+
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div class="card card-body h-100">
-                    <h5>Short professional summary</h5>
+                    <h5>Short Professional Summary</h5>
                     <hr>
-                    <p>Self-driven and detail-oriented Software Engineer with hands-on experience in automation, security testing, and DevOps at Nokia. Proficient in Python, Django, Jenkins, shell scripting, and Kubernetes-based systems. Adept at building CI/CD pipelines, conducting VNF/CNF penetration testing, and automating complex infrastructure workflows. Passionate about scalable systems, secure deployments, and continuous learning. For more details, visit my <a href="https://www.linkedin.com/in/priyanshu-singh-6037b31a5/">LinkedIn</a> profile!</p>
+                    <p>Self-driven and detail-oriented Software Engineer with hands-on experience in automation, security testing, and DevOps at Nokia. Proficient in Python, Django, Jenkins, shell scripting, and Kubernetes-based systems. Adept at building CI/CD pipelines, conducting VNF/CNF penetration testing, and automating complex infrastructure workflows. Passionate about scalable systems, secure deployments, and continuous learning.</p>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div class="card card-body h-100">
                     <h5>What I Know</h5>
                     <hr>
-                    <p>Python, Django, Jenkins, groovy, shell script, robot framework and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
-                    <p>PS: Working on Django, Robot Framework and Machine Learning.</p>
+                    <p>Python, Django, Jenkins, Groovy, Shell Script, Robot Framework, and a whole bunch more I can’t possibly mention in one sentence! ;)</p>
+                    <p>PS: Working on Django, Robot Framework, and Machine Learning.</p>
                 </div>
             </div>
         </div>
+
         <br>
+
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div class="card card-body h-100">
                     <h5>How I Learn</h5>
                     <hr>
                     <p>Reverse Engineer & Build Ugly Prototypes First.</p>
-
                     <p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div class="card card-body h-100">
                     <h5>My Short Term Goals</h5>
                     <hr>
-                    <p>Aside from building small projects I would love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
-
+                    <p>Apart from building small projects, I’d love to enter a position where I can be part of a bigger team & learn from others with more experience than myself.</p>
                 </div>
             </div>
         </div>
+
         <br>
     </div>
-
-
 </body>
 </html>
